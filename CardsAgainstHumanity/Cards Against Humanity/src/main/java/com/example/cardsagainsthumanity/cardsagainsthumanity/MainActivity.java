@@ -156,4 +156,14 @@ public class MainActivity extends Activity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
+
+    private void btnPlay_Click (View view)
+    {
+        
+    }
+
+    private void btnView_Click (View view)
+    {
+
+    }
 }
