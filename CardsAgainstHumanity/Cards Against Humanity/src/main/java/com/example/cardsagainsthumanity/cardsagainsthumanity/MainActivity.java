@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -94,6 +95,9 @@ public class MainActivity extends Activity {
                             delayedHide(AUTO_HIDE_DELAY_MILLIS);
                         }
                     }
+
+                    DatabaseHelper
+
                 });
 
         // Set up the user interaction to manually show or hide the system UI.
@@ -159,7 +163,7 @@ public class MainActivity extends Activity {
 
     private void btnPlay_Click (View view)
     {
-        
+
     }
 
     private void btnView_Click (View view)

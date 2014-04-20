@@ -5,7 +5,7 @@ package com.example.view.cardsagainsthumanity;
  */
 public class ViewCards {
 
-    int number;
-    
+
+
 
 }
