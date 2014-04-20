@@ -95,9 +95,6 @@ public class MainActivity extends Activity {
                             delayedHide(AUTO_HIDE_DELAY_MILLIS);
                         }
                     }
-
-                    DatabaseHelper
-
                 });
 
         // Set up the user interaction to manually show or hide the system UI.
