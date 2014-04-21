@@ -3,6 +3,8 @@
 
     <string name="app_name">Cards Against Humanity</string>
     <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string><string name="btnPlay">Play</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="btnPlay">Play</string>
+    <string name="title_activity_view_cards">ViewCards</string>
 
 </resources>
