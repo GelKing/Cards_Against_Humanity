@@ -52,16 +52,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.26"
-                android:text="Play"
-                android:onClick="btnPlay_Click"/>
+                android:text="Play"/>
 
             <Button android:id="@+id/view"
                 style="?metaButtonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.26"
-                android:text="View Cards"
-                android:onClick="btnView_Click"/>
+                android:text="View Cards"/>
 
         </LinearLayout>
 
