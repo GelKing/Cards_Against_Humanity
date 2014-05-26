@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
             }
         });
 
+
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
         final View contentView = findViewById(R.id.fullscreen_content);
 

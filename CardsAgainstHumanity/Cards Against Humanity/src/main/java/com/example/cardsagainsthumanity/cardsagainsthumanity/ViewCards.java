@@ -11,7 +11,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -27,11 +31,19 @@ public class ViewCards extends Activity {
         setContentView(R.layout.activity_view_cards);
         setupActionBar();
 
-        Button btnView = (Button)findViewById(R.id.white);
-        btnView.setOnClickListener(new View.OnClickListener() {
+        Button btnWhite = (Button)findViewById(R.id.white);
+        btnWhite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //btnView_Click();
+                btnWhite_Click();
+            }
+        });
+
+        Button btnBlack = (Button)findViewById(R.id.black);
+        btnBlack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnBlack_Click();
             }
         });
 
@@ -71,11 +83,29 @@ public class ViewCards extends Activity {
 
     private void btnWhite_Click ()
     {
+        ListView lvWhite = (ListView)findViewById(R.id.whites);
 
+        ArrayList<String> testList;
+        testList = new ArrayList<String>();
+        testList.add("White Ass Daddy");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.test_list_item,testList);
+        lvWhite.setAdapter(adapter);
+
+        lvWhite.setVisibility(1);
     }
 
     private void btnBlack_Click ()
     {
+        ListView lvBlack = (ListView)findViewById(R.id.blacks);
 
+        ArrayList<String> testList;
+        testList = new ArrayList<String>();
+        testList.add("Black Ass Momma");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.test_list_item,testList);
+        lvBlack.setAdapter(adapter);
+
+        lvBlack.setVisibility(1);
     }
 }
