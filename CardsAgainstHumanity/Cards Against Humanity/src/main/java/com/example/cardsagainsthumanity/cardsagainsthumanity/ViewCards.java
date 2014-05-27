@@ -91,8 +91,10 @@ public class ViewCards extends Activity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.test_list_item,testList);
         lvWhite.setAdapter(adapter);
+        lvWhite.setVisibility(View.VISIBLE);
 
-        lvWhite.setVisibility(1);
+        ListView lvBlack = (ListView)findViewById(R.id.blacks);
+        lvBlack.setVisibility(View.GONE);
     }
 
     private void btnBlack_Click ()
@@ -106,6 +108,9 @@ public class ViewCards extends Activity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.test_list_item,testList);
         lvBlack.setAdapter(adapter);
 
-        lvBlack.setVisibility(1);
+        lvBlack.setVisibility(View.VISIBLE);
+
+        ListView lvWhite = (ListView)findViewById(R.id.whites);
+        lvWhite.setVisibility(View.GONE);
     }
 }

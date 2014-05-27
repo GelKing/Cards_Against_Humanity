@@ -18,7 +18,7 @@
         <LinearLayout android:id="@+id/fullscreen_content_controls"
             style="?metaButtonBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75sp"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/black_overlay"
             android:orientation="horizontal"
@@ -27,16 +27,20 @@
                 <Button android:id="@+id/white"
                     style="?metaButtonBarButtonStyle"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.26"
-                    android:text="White"/>
+                    android:layout_height="75sp"
+                    android:layout_weight="0.5"
+                    android:text="White"
+                    android:background="#000000"
+                    android:textColor="#ffffff" />
 
                 <Button android:id="@+id/black"
                     style="?metaButtonBarButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.26"
-                    android:text="Black"/>
+                    android:layout_weight="0.5"
+                    android:text="Black"
+                    android:textColor="#ffffff"
+                    android:background="#000000" />
 
         </LinearLayout>
 
@@ -44,14 +48,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/whites"
-            android:layout_gravity="center"
+            android:layout_gravity="top"
             android:visibility="gone"/>
 
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/blacks"
-            android:layout_gravity="center"
+            android:layout_gravity="top"
             android:visibility="gone"/>
     </FrameLayout>
 
